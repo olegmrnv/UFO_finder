@@ -34,9 +34,11 @@ function filtering_function(){
     filtered_data.forEach(event => {
         var row = table.append("tr");        
         Object.values(event).forEach((value) => {
-            row.append("td").text(value);
+            row.append("td").html(value);
         });
     });
+
+    
 };
 
 // Creating listener for button
